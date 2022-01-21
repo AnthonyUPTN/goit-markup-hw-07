@@ -2,39 +2,41 @@
   background-color: $footer-bg-color;
   line-height: 1.71;
   padding: 60px 0;
-}
 
-.flex-container {
-  display: flex;
-  align-items: baseline;
-}
+  &__flex-container {
+    display: flex;
+    align-items: baseline;
+  }
 
-.logo--white {
-  color: $color-white;
-  margin-bottom: 20px;
-}
+  &__contacts-container {
+    margin-right: 70px;
+  }
 
-.fact-address {
-  font-style: normal;
-  color: $color-white;
-  cursor: default;
-}
+  &__logo--white {
+    color: $color-white;
+  }
 
-.contacts-footer {
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
+  &_logo--margin {
+    display: block;
+    margin-bottom: 20px;
+  }
 
-  transition: color $cubic;
-}
+  &__fact-address {
+    font-style: normal;
+    color: $color-white;
+    cursor: default;
+  }
 
-.contacts-footer:hover,
-.contacts-footer:focus {
-  color: $action-text-color;
-}
+  &__contacts-link {
+    color: $footer-contacts-color;
 
-.footer-logo {
-  display: block;
-  margin-bottom: 20px;
+    transition: color $cubic;
+  }
+
+  &__contacts-link:hover,
+  &__contacts-link:focus {
+    color: $action-text-color;
+  }
 }
 
 .join-us {
@@ -50,14 +52,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $color-white;
-}
-
-.address {
-  margin-top: 20px;
-}
-
-.contacts-container {
-  margin-right: 70px;
 }
 
 .social-links {
@@ -76,12 +70,6 @@
 
 // форма регистрации
 
-.join-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .join-logo-text {
   margin-bottom: 20px;
 
@@ -91,6 +79,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $color-white;
+}
+
+.join-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .join-email {

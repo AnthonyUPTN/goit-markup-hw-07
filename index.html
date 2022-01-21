@@ -24,32 +24,39 @@
         <a class="logo" href="./index.html">
           <span class="logo__leftpart">Web</span>Studio
         </a>
-        <nav class="header_nav">
-          <ul class="header_nav-list">
-            <li class="nav-list">
-              <a class="nav-link current" href="./index.html">Студия</a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link header__nav-link--current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li class="nav-list">
-              <a class="nav-link" href="./portfolio.html">Портфолио</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-list">
-              <a class="nav-link" href="">Контакты</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <ul class="header-contacts">
-          <li class="contacts">
-            <a class="contacts-list" href="mailto:info@devstudio.com">
-              <svg class="icon-contacts" width="16" height="12">
+          <li class="header-contacts__item">
+            <a
+              class="header-contacts__content"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts">
-            <a class="contacts-list" href="tel:+380961111111">
-              <svg class="icon-contacts" width="10" height="16">
+          <li class="header-contacts__item">
+            <a class="header-contacts__content" href="tel:+380961111111">
+              <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11
             </a>
@@ -419,26 +426,29 @@
     <!--футер-->
     <footer class="footer">
       <div class="container">
-        <div class="flex-container">
-          <div class="contacts-container">
-            <a class="logo logo--white" href="./index.html">
+        <div class="footer__flex-container">
+          <div class="footer__contacts-container">
+            <a
+              class="logo footer__logo--white footer_logo--margin"
+              href="./index.html"
+            >
               <span class="logo__leftpart">Web</span>Studio
             </a>
-            <address class="address">
+            <address class="footer__address">
               <a
-                class="fact-address"
+                class="footer__fact-address"
                 href="https://goo.gl/maps/FLYPkyDx762nyWsy5"
                 >г. Киев, пр-т Леси Украинки, 26
               </a>
             </address>
-            <ul>
-              <li>
-                <a class="contacts-footer" href="mailto:info@example.com"
+            <ul class="footer__contacts">
+              <li class="footer__contacts-list">
+                <a class="footer__contacts-link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="contacts-footer" href="tel:+380991111111"
+                <a class="footer__contacts-link" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -473,7 +483,7 @@
               </li>
             </ul>
           </div>
-          <div class="join-block">
+          <div class="footer__subscribe-container">
             <h3 class="join-logo-text">Подпишитесь на рассылку</h3>
             <form class="join-form">
               <input class="join-email" type="email" placeholder="E-mail" />

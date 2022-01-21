@@ -19,34 +19,43 @@
   <body>
     <!--хедер-->
     <header class="header">
-      <div class="container header-flex">
+      <div class="container header__flex">
         <a class="logo" href="./index.html">
           <span class="logo__leftpart">Web</span>Studio
         </a>
-        <nav>
-          <ul class="header-nav">
-            <li class="nav-list">
-              <a class="nav-link" href="./index.html">Студия</a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./index.html">Студия</a>
             </li>
-            <li class="nav-list">
-              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link header__nav-link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav-list"><a class="nav-link" href="">Контакты</a></li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <ul class="header-contacts">
-          <li class="contacts">
-            <a class="contacts-list" href="mailto:info@devstudio.com">
-              <svg class="icon-contacts" width="16" height="12">
+          <li class="header-contacts__item">
+            <a
+              class="header-contacts__content"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts">
-            <a class="contacts-list" href="tel:+380961111111">
-              <svg class="icon-contacts" width="10" height="16">
+          <li class="header-contacts__item">
+            <a class="header-contacts__content" href="tel:+380961111111">
+              <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11
             </a>
@@ -64,7 +73,7 @@
           <!--навигация-->
 
           <ul class="portfolio-nav">
-            <li class="portfolio-nav_list">
+            <li class="portfolio-nav__list">
               <button
                 class="portfolio-nav__button portfolio-nav__button--current"
                 type="button"
@@ -72,22 +81,22 @@
                 Все
               </button>
             </li>
-            <li class="portfolio-nav_list">
+            <li class="portfolio-nav__list">
               <button class="portfolio-nav__button" type="button">
                 Веб-сайты
               </button>
             </li>
-            <li class="portfolio-nav_list">
+            <li class="portfolio-nav__list">
               <button class="portfolio-nav__button" type="button">
                 Приложения
               </button>
             </li>
-            <li class="portfolio-nav_list">
+            <li class="portfolio-nav__list">
               <button class="portfolio-nav__button" type="button">
                 Дизайн
               </button>
             </li>
-            <li class="portfolio-nav_list">
+            <li class="portfolio-nav__list">
               <button class="portfolio-nav__button" type="button">
                 Маркетинг
               </button>

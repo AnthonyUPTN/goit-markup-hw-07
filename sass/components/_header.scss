@@ -1,15 +1,6 @@
-.logo {
-  font-family: "Raleway", sans-serif;
-  color: currentColor;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
 .logo__leftpart {
-  color: $action-text-color;
-}
+    color: $action-text-color;
+  }
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -22,83 +13,82 @@
     display: flex;
     align-items: center;
   }
-}
 
-.nav-link {
-  color: currentColor;
-  position: relative;
-}
+  &__nav-list {
+    display: flex;
+    margin-left: 93px;
+  }
 
-.current {
-  color: $action-text-color;
-}
+  &__nav-item {
+    padding: 32px 0;
 
-.current::after {
-  content: "";
+    transition: color $cubic;
+  }
 
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: $action-text-color;
+  &__nav-item:not(:last-child),
+  .contacts:not(:last-child) {
+    margin-right: 50px;
+  }
 
-  position: absolute;
-  bottom: 0;
-}
+  &__nav-item:hover,
+  &__nav-item:focus {
+    color: $action-text-color;
+  }
 
-.header_nav-list {
-  display: flex;
-  margin-left: 93px;
-}
+  &__nav-link {
+    color: currentColor;
+    position: relative;
+  }
 
-.nav-list {
-  padding: 32px 0;
+  &__nav-link {
+    padding: 32px 0;
+  }
 
-  transition: color $cubic;
-}
+  &__nav-link--current {
+    color: $action-text-color;
+  }
 
-.nav-link {
-  padding: 32px 0;
-}
+  &__nav-link--current::after {
+    content: "";
 
-.nav-list:not(:last-child),
-.contacts:not(:last-child) {
-  margin-right: 50px;
-}
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $action-text-color;
 
-.nav-list:hover,
-.nav-list:focus {
-  color: $action-text-color;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .header-contacts {
   display: flex;
   margin-left: auto;
-}
 
-.cantacts {
-  padding: 32px 0;
-}
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 
-.contacts-list {
-  padding: 32px 0;
-  display: inline-flex;
-  color: $second-text-color;
+  &__content {
+    display: flex;
+    color: $second-text-color;
 
-  transition: fill $cubic, transform $cubic, color $cubic;
-}
+    transition: fill $cubic, transform $cubic, color $cubic;
+  }
 
-.icon-contacts {
-  margin-right: 10px;
-  fill: $second-text-color;
-}
+  &__icon {
+    margin-right: 10px;
+    fill: $second-text-color;
+  }
 
-.contacts-list:hover .icon-contacts,
-.contacts-list:focus .icon-contacts {
-  fill: $action-text-color;
-}
+  &__content:hover &__icon,
+  &__content:focus &__icon {
+    fill: $action-text-color;
+  }
 
-.contacts-list:hover,
-.contacts-list:hover {
-  color: $action-text-color;
-  transform: scale(1.15);
+  &__content:hover,
+  &__content:hover {
+    color: $action-text-color;
+    transform: scale(1.15);
+  }
 }

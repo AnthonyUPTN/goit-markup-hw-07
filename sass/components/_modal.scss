@@ -5,7 +5,7 @@
   z-index: 2;
 
   opacity: 1;
-  transition: opacity var(--cubic);
+  transition: opacity $cubic;
 
   width: 100%;
   height: 100%;
@@ -13,7 +13,7 @@
 }
 
 .is-hidden {
-  transition: opacity var(--cubic);
+  transition: opacity $cubic;
 }
 
 .blackdrop.is-hidden {
@@ -26,14 +26,13 @@
   top: 50%;
   left: 50%;
 
-  max-width: 448px;
   padding: 40px;
 
   transform: translate(-50%, -50%);
 
   min-width: 528px;
   min-height: 581px;
-  background-color: var(--color-white);
+  background-color: $color-white;
 
   border-radius: 4px;
 }
@@ -52,16 +51,16 @@
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--color-white);
+  background-color: $color-white;
 
   cursor: pointer;
 
-  transition: fill var(--cubic);
+  transition: fill $cubic;
 }
 
 .modal-close:hover,
 .modal-close:focus {
-  fill: var(--action-text-color);
+  fill: $action-text-color;
 }
 
 .modal-about {
@@ -71,14 +70,14 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .modal-form {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  color: $second-text-color;
 }
 
 .inputs {
@@ -99,7 +98,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: pointer;
 
-  transition: fill var(--cubic), border var(--cubic), border-radius var(--cubic);
+  transition: fill $cubic, border $cubic, border-radius $cubic;
 }
 
 .form-name,
@@ -130,30 +129,30 @@ input {
 
 input:focus + .label-icon,
 input:not(:placeholder-shown) + .label-icon {
-  fill: var(--action-text-color);
+  fill: $action-text-color;
 }
 
 input:focus,
 input:not(:placeholder-shown) {
-  outline: 1px solid var(--action-text-color);
+  outline: 1px solid $action-text-color;
 }
 
 .form-name:hover input,
 .form-mail:hover input,
 .form-tel:hover input {
   border-radius: 4px;
-  border: 1px solid var(--action-text-color);
+  border: 1px solid $action-text-color;
 }
 
 .form-name:hover .label-icon,
 .form-mail:hover .label-icon,
 .form-tel:hover .label-icon {
-  fill: var(--action-text-color);
+  fill: $action-text-color;
 }
 
 textarea:focus-visible,
 input:focus-visible {
-  outline: 1px solid var(--action-text-color);
+  outline: 1px solid $action-text-color;
 }
 
 .form-comment {
@@ -169,13 +168,13 @@ textarea {
 
   min-height: 140px;
 
-  transition: border-radius var(--cubic), border var(--cubic);
+  transition: border-radius $cubic, border $cubic;
 }
 
 textarea:hover,
 textarea:focus {
   border-radius: 4px;
-  border: 1px solid var(--action-text-color);
+  border: 1px solid $action-text-color;
 }
 
 .modal-policy {
@@ -204,7 +203,7 @@ textarea:focus {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid $primary-text-color;
   border-radius: 2px;
 }
 
@@ -217,7 +216,7 @@ textarea:focus {
 .license-rules {
   margin-left: 4px;
 
-  color: var(--action-text-color);
+  color: $action-text-color;
   text-decoration: underline;
 }
 
@@ -228,8 +227,8 @@ textarea:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--color-white);
-  background-color: var(--action-text-color);
+  color: $color-white;
+  background-color: $action-text-color;
   cursor: pointer;
 
   border: transparent;

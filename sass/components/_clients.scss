@@ -1,42 +1,44 @@
-.clients-list {
-  display: flex;
-  width: 100%;
-}
+.clients {
+  &__list {
+    display: flex;
+    width: 100%;
+  }
 
-.clients-companies {
-  width: calc(100% / 6);
-}
+  &_item {
+    width: calc(100% / 6);
+  }
 
-.clients-companies:not(:last-child) {
-  margin-right: 30px;
-}
+  &_item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.icon-companies {
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
-  transition: transform var(--cubic);
-}
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    transition: transform $cubic;
+  }
 
-.clients-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 32px;
+  &__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
 
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition: border-color var(--cubic);
-}
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border-color $cubic;
+  }
 
-.clients-flex:hover,
-.clients-flex:focus {
-  border-color: var(--action-text-color);
-}
+  &__flex:hover,
+  &__flex:focus {
+    border-color: $action-text-color;
+  }
 
-.clients-flex:hover .icon-companies,
-.clients-flex:focus .icon-companies {
-  fill: var(--action-text-color);
+  &__flex:hover &__icon,
+  &__flex:focus &__icon {
+    fill: $action-text-color;
 
-  transform: scale(1.25);
+    transform: scale(1.25);
+  }
 }

@@ -1,9 +1,14 @@
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .section {
@@ -28,12 +33,7 @@ body {
   padding-right: 15px;
 }
 
-.exaples-img {
-  display: block;
-  max-width: 100%;
-}
-
-.title-hiden {
+.title-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -42,14 +42,4 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
 }

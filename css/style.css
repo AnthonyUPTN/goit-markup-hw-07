@@ -39,7 +39,7 @@ ul {
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   letter-spacing: 0.03em;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .logo__leftpart {
-  color: var(--action-text-color);
+  color: $action-text-color;
 }
 
 .nav-link {
@@ -108,7 +108,7 @@ body {
 }
 
 .current {
-  color: var(--action-text-color);
+  color: $action-text-color;
 }
 
 .current::after {
@@ -131,7 +131,7 @@ body {
 .nav-list {
   padding: 32px 0;
 
-  transition: color var(--cubic);
+  transition: color $cubic;
 }
 
 .nav-link {
@@ -145,7 +145,7 @@ body {
 
 .nav-list:hover,
 .nav-list:focus {
-  color: var(--action-text-color);
+  color: $action-text-color;
 }
 
 .header-contacts {
@@ -160,24 +160,24 @@ body {
 .contacts-list {
   padding: 32px 0;
   display: inline-flex;
-  color: var(--second-text-color);
+  color: $second-text-color;
 
-  transition: fill var(--cubic), transform var(--cubic), color var(--cubic);
+  transition: fill $cubic, transform $cubic, color $cubic;
 }
 
 .icon-contacts {
   margin-right: 10px;
-  fill: var(--second-text-color);
+  fill: $second-text-color;
 }
 
 .contacts-list:hover .icon-contacts,
 .contacts-list:focus .icon-contacts {
-  fill: var(--action-text-color);
+  fill: $action-text-color;
 }
 
 .contacts-list:hover,
 .contacts-list:hover {
-  color: var(--action-text-color);
+  color: $action-text-color;
   transform: scale(1.15);
 }
 
@@ -209,7 +209,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: $color-white;
 }
 
 .hero-button {
@@ -221,12 +221,12 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--color-white);
-  background-color: var(--action-text-color);
+  color: $color-white;
+  background-color: $action-text-color;
 
   cursor: pointer;
 
-  transition: transform var(--cubic);
+  transition: transform $cubic;
 }
 
 .hero-button:hover {
@@ -242,7 +242,7 @@ body {
   z-index: 2;
 
   opacity: 1;
-  transition: opacity var(--cubic);
+  transition: opacity $cubic;
 
   width: 100%;
   height: 100%;
@@ -250,7 +250,7 @@ body {
 }
 
 .is-hidden {
-  transition: opacity var(--cubic);
+  transition: opacity $cubic;
 }
 
 .blackdrop.is-hidden {
@@ -270,7 +270,7 @@ body {
 
   min-width: 528px;
   min-height: 581px;
-  background-color: var(--color-white);
+  background-color: $color-white;
 
   border-radius: 4px;
 }
@@ -289,16 +289,16 @@ body {
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--color-white);
+  background-color: $color-white;
 
   cursor: pointer;
 
-  transition: fill var(--cubic);
+  transition: fill $cubic;
 }
 
 .modal-close:hover,
 .modal-close:focus {
-  fill: var(--action-text-color);
+  fill: $action-text-color;
 }
 
 .modal-about {
@@ -308,14 +308,14 @@ body {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .modal-form {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  color: $second-text-color;
 }
 
 .inputs {
@@ -336,7 +336,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: pointer;
 
-  transition: fill var(--cubic), border var(--cubic), border-radius var(--cubic);
+  transition: fill $cubic, border $cubic, border-radius $cubic;
 }
 
 .form-name,
@@ -367,30 +367,30 @@ input {
 
 input:focus + .label-icon,
 input:not(:placeholder-shown) + .label-icon {
-  fill: var(--action-text-color);
+  fill: $action-text-color;
 }
 
 input:focus,
 input:not(:placeholder-shown) {
-  outline: 1px solid var(--action-text-color);
+  outline: 1px solid $action-text-color;
 }
 
 .form-name:hover input,
 .form-mail:hover input,
 .form-tel:hover input {
   border-radius: 4px;
-  border: 1px solid var(--action-text-color);
+  border: 1px solid $action-text-color;
 }
 
 .form-name:hover .label-icon,
 .form-mail:hover .label-icon,
 .form-tel:hover .label-icon {
-  fill: var(--action-text-color);
+  fill: $action-text-color;
 }
 
 textarea:focus-visible,
 input:focus-visible {
-  outline: 1px solid var(--action-text-color);
+  outline: 1px solid $action-text-color;
 }
 
 .form-comment {
@@ -406,13 +406,13 @@ textarea {
 
   min-height: 140px;
 
-  transition: border-radius var(--cubic), border var(--cubic);
+  transition: border-radius $cubic, border $cubic;
 }
 
 textarea:hover,
 textarea:focus {
   border-radius: 4px;
-  border: 1px solid var(--action-text-color);
+  border: 1px solid $action-text-color;
 }
 
 .modal-policy {
@@ -441,7 +441,7 @@ textarea:focus {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid $primary-text-color;
   border-radius: 2px;
 }
 
@@ -454,7 +454,7 @@ textarea:focus {
 .license-rules {
   margin-left: 4px;
 
-  color: var(--action-text-color);
+  color: $action-text-color;
   text-decoration: underline;
 }
 
@@ -465,8 +465,8 @@ textarea:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--color-white);
-  background-color: var(--action-text-color);
+  color: $color-white;
+  background-color: $action-text-color;
   cursor: pointer;
 
   border: transparent;
@@ -488,7 +488,7 @@ textarea:focus {
   margin-bottom: 30px;
 
   max-width: 270px;
-  background-color: var(--pluses-svg-bg);
+  background-color: $pluses-svg-bg;
 
   border-radius: 4px;
 }
@@ -497,7 +497,7 @@ textarea:focus {
   width: 70px;
   height: 70px;
 
-  transition: transform var(--cubic);
+  transition: transform $cubic;
 }
 
 .pluses__logo-icon:hover {
@@ -521,7 +521,7 @@ textarea:focus {
 
 .pluses__text {
   line-height: 1.71;
-  color: var(--second-text-color);
+  color: $second-text-color;
 }
 
 /* блок примеров работ */
@@ -584,7 +584,7 @@ textarea:focus {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: $color-white;
 }
 
 /* наша комманда */
@@ -601,7 +601,7 @@ textarea:focus {
 }
 
 .team-card__item {
-  background-color: var(--color-white);
+  background-color: $color-white;
 
   text-align: center;
 
@@ -634,7 +634,7 @@ textarea:focus {
   margin-bottom: 16px;
 
   line-height: 1.71;
-  color: var(--second-text-color);
+  color: $second-text-color;
 }
 
 /* соц сети на карточках */
@@ -653,7 +653,7 @@ textarea:focus {
   height: 20px;
   fill: #afb1b8;
 
-  transition: fill var(--cubic);
+  transition: fill $cubic;
 }
 
 .socials {
@@ -667,20 +667,20 @@ textarea:focus {
 }
 
 .team-flex {
-  transition: background-color var(--cubic);
+  transition: background-color $cubic;
 }
 
 .team-flex:hover,
 .team-flex:focus {
   width: 44px;
   height: 44px;
-  background-color: var(--action-text-color);
+  background-color: $action-text-color;
   border-radius: 50%;
 }
 
 .team-flex:hover .social-icon,
 .team-flex:focus .social-icon {
-  fill: var(--color-white);
+  fill: $color-white;
 }
 
 /* блок постоянные клиенты */
@@ -702,7 +702,7 @@ textarea:focus {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  transition: transform var(--cubic);
+  transition: transform $cubic;
 }
 
 .clients-flex {
@@ -713,17 +713,17 @@ textarea:focus {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color var(--cubic);
+  transition: border-color $cubic;
 }
 
 .clients-flex:hover,
 .clients-flex:focus {
-  border-color: var(--action-text-color);
+  border-color: $action-text-color;
 }
 
 .clients-flex:hover .icon-companies,
 .clients-flex:focus .icon-companies {
-  fill: var(--action-text-color);
+  fill: $action-text-color;
 
   transform: scale(1.25);
 }
@@ -731,7 +731,7 @@ textarea:focus {
 /*элементы футера*/
 
 .footer {
-  background-color: var(--footer-bg-color);
+  background-color: $footer-bg-color;
   line-height: 1.71;
   padding: 60px 0;
 }
@@ -742,13 +742,13 @@ textarea:focus {
 }
 
 .logo--white {
-  color: var(--color-white);
+  color: $color-white;
 }
 
 .fact-address {
   display: block;
   font-style: normal;
-  color: var(--color-white);
+  color: $color-white;
   cursor: default;
 }
 
@@ -756,12 +756,12 @@ textarea:focus {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 
-  transition: color var(--cubic);
+  transition: color $cubic;
 }
 
 .contacts-footer:hover,
 .contacts-footer:focus {
-  color: var(--action-text-color);
+  color: $action-text-color;
 }
 
 .footer-logo {
@@ -781,7 +781,7 @@ textarea:focus {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: $color-white;
 }
 
 .footer-contacts {
@@ -803,14 +803,14 @@ textarea:focus {
 }
 
 .join-icon {
-  transition: background-color var(--cubic);
+  transition: background-color $cubic;
 
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .join-icon:hover,
 .join-icon:focus {
-  background-color: var(--action-text-color);
+  background-color: $action-text-color;
 }
 
 .join-margin:not(:last-child) {
@@ -831,7 +831,7 @@ textarea:focus {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: $color-white;
 }
 
 .join-email {
@@ -840,13 +840,13 @@ textarea:focus {
 
   width: 358px;
 
-  background-color: var(--footer-bg-color);
-  color: var(--color-white);
+  background-color: $footer-bg-color;
+  color: $color-white;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
-  transition: border var(--cubic);
+  transition: border $cubic;
 }
 
 .join-submit {
@@ -857,7 +857,7 @@ textarea:focus {
 
   text-align: center;
 
-  background-color: var(--action-text-color);
+  background-color: $action-text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
@@ -876,7 +876,7 @@ textarea:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--color-white);
+  color: $color-white;
 
   text-align: center;
 }
@@ -902,19 +902,18 @@ textarea:focus {
   border: none;
   border-radius: 4px;
 
-  transition: background-color var(--cubic), box-shadow var(--cubic),
-    var(--cubic);
+  transition: background-color $cubic, box-shadow $cubic, $cubic;
 }
 
 .current-button {
-  background-color: var(--action-text-color);
-  color: var(--color-white);
+  background-color: $action-text-color;
+  color: $color-white;
 }
 
 .button-nav:hover,
 .button-nav:focus {
-  background-color: var(--action-text-color);
-  color: var(--color-white);
+  background-color: $action-text-color;
+  color: $color-white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -942,7 +941,7 @@ textarea:focus {
 .work-flex {
   display: inline-block;
 
-  transition: box-shadow var(--cubic);
+  transition: box-shadow $cubic;
 }
 
 .work-flex:hover,
@@ -964,7 +963,7 @@ textarea:focus {
   height: 100%;
   opacity: 0;
   transform: translateY(100%);
-  transition: transform var(--cubic);
+  transition: transform $cubic;
 }
 
 .work-card:hover .work-overlay::before {
@@ -983,8 +982,8 @@ textarea:focus {
   right: 32px;
 
   opacity: 0;
-  transition: opacity var(--cubic);
-  color: var(--color-white);
+  transition: opacity $cubic;
+  color: $color-white;
 
   font-size: 18px;
   line-height: 1.56;
@@ -1003,7 +1002,7 @@ textarea:focus {
 .work-name {
   margin-bottom: 4px;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -1013,5 +1012,5 @@ textarea:focus {
 .work-type {
   font-size: 16px;
   line-height: 1.8;
-  color: var(--second-text-color);
+  color: $second-text-color;
 }
